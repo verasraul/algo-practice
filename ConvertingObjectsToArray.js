@@ -5,6 +5,9 @@ const myObject = {
     NICKNAME: 'I AM LEGEND'
 }
 
+const myEmptyObject = {
+
+}
 
 function ConvertObjectToArray (data){
     
@@ -15,3 +18,4 @@ function ConvertObjectToArray (data){
 }
 
 console.log(ConvertObjectToArray(myObject))
+console.log(ConvertObjectToArray(myEmptyObject))
