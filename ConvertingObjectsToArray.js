@@ -10,11 +10,10 @@ const myEmptyObject = {
 }
 
 function ConvertObjectToArray (data){
-    
+    // Create a function 
     const convertedtKeyPairs = Object.entries(data)
 
     return  convertedtKeyPairs;
-
 }
 
 console.log(ConvertObjectToArray(myObject))
