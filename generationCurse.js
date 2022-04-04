@@ -24,13 +24,15 @@ const generationInfo = [{
         "F" : "mother",
     }
 ]
+console.log(generationInfo)
 
 function generationCurse(x,y){
     //x is a number representing the generation
     //y represents the sex
     //y is equal to m or f
-  
+
     //function should return who will recieve the generational curse based on the table 
+    // if (x === )
     
   }
 
