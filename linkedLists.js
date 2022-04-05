@@ -2,6 +2,8 @@
 const number = 5;
 // const log = console.log.bind(console, "Results: ")
 
+
+// create linked lists 
 class LinkList {
   constructor(head = null) {
     this.head = head
@@ -13,4 +15,15 @@ class Node {
     this.next = null
     this.data = data
   }
+}
+
+//  create function to loop through linked list
+function printList(){
+    let current = this.head;
+    let str = '';
+    while (current) {
+        str += current.element + ' ';
+        current = current.next;
+    }
+    console.log(str)
 }
