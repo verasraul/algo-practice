@@ -10,6 +10,8 @@ class LinkList {
   }
 }
 
+let first = new LinkList();
+
 class Node {
   constructor( data) {
     this.next = null
@@ -19,6 +21,7 @@ class Node {
 
 //  create function to loop through linked list
 function printList(){
+    // create a variable to hold head index
     let current = this.head;
     let str = '';
     while (current) {
@@ -27,3 +30,4 @@ function printList(){
     }
     console.log(str)
 }
+printList(first);
