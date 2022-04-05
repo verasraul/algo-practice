@@ -23,16 +23,25 @@ const generationInfo = [{
         "M" : "father",
         "F" : "mother",
     }
-]
-console.log(generationInfo)
+  ]
+console.log(generationInfo[0].Generation)
+console.log(generationInfo[0].Generation)
 
-function generationCurse(x,y){
+
+
+function generationCurse(x){
+    let str = x.toString();
     //x is a number representing the generation
     //y represents the sex
     //y is equal to m or f
 
     //function should return who will recieve the generational curse based on the table 
-    // if (x === )
     
-  }
+    // Create a condition to handle function parameters
+    let generation = generationInfo.filter(generation => generationInfo.Generation === str);
 
+    if (str === "-3"){
+        console.log(generation);
+    }
+  }
+console.log(generationCurse(-3))
