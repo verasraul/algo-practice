@@ -1,10 +1,10 @@
 //create a javascript object with three properties [JAVASCRIPT OBJECTS]
 const jsObject = {
     "FIRST" : "Raul",
-    "MIDDLE" : "n/a"
+    "MIDDLE" : "n/a",
     "LAST" : "Veras",
 }
-
+console.log(jsObject);
 
 //create an array with 5 elements
 //push a value into the array
