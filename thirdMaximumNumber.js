@@ -2,18 +2,24 @@
 // If the third maximum does not exist, return the maximum number.
 
 function thirdMax(nums) {
-    let maxNum = Math.max(...nums)
-    console.log(maxNum);
+    let max, max2, max3; 
 
-    if (nums[2] === maxNum){
-        console.log(nums[2])
-    }else{
-        return null;
+    for(let i=0; i < nums.length; i++){
+        if(nums[i] > max || max === undefined){
+            max3 = max2;
+            max2 = max;
+            max =nums[i];
+        } else if ((nums[i] < max && nums[i] > max2) || (max2 === undefined && max !== nums[i])){
+            max3 = max2;
+            max2 = nums[i];
+        } else if ((nums[i] < max2 && nums[i] > max3) || (max3 === undefined && max !== nums[i] && max2 !== nums[i])){
+            max3 = nums[i];
+        }
     }
-    // console.log(nums[2])
-    // console.log(Math.max(...nums))
+    return max3 === undefined ? max : max3;
+
 };
 
-let newArray = [1, 5, 2];
+let newArray = [1, 4, 3, 5];
 
-thirdMax(newArray);
+console.log(thirdMax(newArray));
